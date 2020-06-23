@@ -1,0 +1,17 @@
+$primary-color:#0B4C9A;
+$accent-color:#FDB024;
+$tertiary-color:#BDCFE2;
+
+$dark-tertiary: #354151;
+
+$white: #fff;
+$black: #000;
+
+$dark-grey:#333;
+$light-grey:#ddd;
+
+$gradient:linear-gradient(19deg, $tertiary-color 0%, $primary-color 100%);
+$btn-gradient: linear-gradient($accent-color 0%, darken($accent-color, 10%) 80%);
+$btn-gradient-hover: linear-gradient(darken($accent-color, 10%) 0%, darken($accent-color, 10%)100%);
+
+$mobile-gradient:linear-gradient(19deg, $tertiary-color 0%, $primary-color 50%);

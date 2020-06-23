@@ -23,7 +23,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['vue-slick-carousel/dist/vue-slick-carousel.css'],
+  css: [],
+  webfontloader: {
+    google: {
+      families: ['Nanum+Myeongjo', 'Open+Sans']
+    }
+  },
   /*
    ** Plugins to load before mounting the App
    */
@@ -39,13 +44,52 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module'
   ],
+  eslint: {
+    fix: true
+  },
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
+    'nuxt-fontawesome',
+    'nuxt-webfontloader'
   ],
+  styleResources: {
+    scss: [
+      '~assets/scss/_breakpoints.scss',
+      '~assets/scss/_colors.scss',
+      '~assets/scss/_mixins.scss',
+      '~assets/scss/_variables.scss'
+    ]
+  },
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons', // Solid icons
+        icons: [
+          'faEnvelope',
+          'faMapMarkerAlt',
+          'faPhone',
+          'faClock',
+          'faCouch',
+          'faUserFriends',
+          'faAngry',
+          'faComment',
+          'faBars',
+          'faCaretDown',
+          'faMobileAlt',
+          'faUsers'
+        ]
+      },
+      {
+        set: '@fortawesome/free-brands-svg-icons', // Brand icons
+        icons: ['faDev', 'faFacebook', 'faTwitter', 'faInstagram', 'faYoutube']
+      }
+    ]
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

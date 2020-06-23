@@ -1,11 +1,8 @@
 <template>
   <div>
-    <section class="section__hero">
-      <HeroSlider />
-    </section>
-    <section class="section__quotes">
-      <Quotes />
-    </section>
+    <HeroSlider />
+
+    <Quotes />
   </div>
 </template>
 
