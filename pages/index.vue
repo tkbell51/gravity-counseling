@@ -91,7 +91,7 @@
         <Gallery />
       </div>
     </section>
-    <ContactForm />
+    <!-- <ContactForm /> -->
   </div>
 </template>
 
@@ -100,7 +100,7 @@ import HeroSlider from '@/components/HeroSlider'
 import Quotes from '@/components/Quotes'
 import Fas from '@/components/Fas'
 import SimplePractice from '@/components/SimplePractice'
-import ContactForm from '@/components/ContactForm'
+// import ContactForm from '@/components/ContactForm'
 import ServicesGrid from '@/components/ServicesGrid'
 import Gallery from '@/components/Gallery'
 import MentalResourceGrid from '@/components/MentalResourceGrid'
@@ -111,7 +111,7 @@ export default {
     Quotes,
     Fas,
     SimplePractice,
-    ContactForm,
+    // ContactForm,
     ServicesGrid,
     Gallery,
     MentalResourceGrid
